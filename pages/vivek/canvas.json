@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 890,
+          "bottomRow": 2710,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -155,7 +155,7 @@
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "overflow": "NONE",
+                      "overflow": "SCROLL",
                       "parentColumnSpace": 18.0625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 16,
@@ -192,7 +192,7 @@
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "overflow": "NONE",
+                      "overflow": "SCROLL",
                       "parentColumnSpace": 18.0625,
                       "dynamicTriggerPathList": [],
                       "leftColumn": 0,
@@ -235,103 +235,15 @@
               "borderRadius": "0"
             },
             {
-              "widgetName": "Table",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "id",
-                "gender",
-                "latitude",
-                "longitude",
-                "dob",
-                "phone",
-                "email",
-                "image",
-                "country",
-                "name",
-                "t",
-                "customColumn1",
-                "customColumn2"
-              ],
-              "isVisibleDownload": true,
-              "dynamicPropertyPathList": [
-                {
-                  "key": "primaryColumns.id.isCellVisible"
-                },
-                {
-                  "key": "primaryColumns.id.horizontalAlignment"
-                },
-                {
-                  "key": "primaryColumns.id.textSize"
-                },
-                {
-                  "key": "primaryColumns.id.fontStyle"
-                },
-                {
-                  "key": "primaryColumns.id.verticalAlignment"
-                },
-                {
-                  "key": "primaryColumns.customColumn1.isCellVisible"
-                },
-                {
-                  "key": "primaryColumns.customColumn1.isDisabled"
-                },
-                {
-                  "key": "primaryColumns.customColumn1.buttonVariant"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.isCellVisible"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.isDisabled"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.isCompact"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.menuVariant"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.iconName"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.menuItems.menuItemo4b50fefhb.isVisible"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.menuItems.menuItemo4b50fefhb.isDisabled"
-                },
-                {
-                  "key": "isVisible"
-                },
-                {
-                  "key": "isSortable"
-                }
-              ],
-              "compactMode": "DEFAULT",
-              "displayName": "Table",
+              "multiRowSelection": true,
+              "onSort": "{{showAlert('sorted')}}",
+              "isVisibleDownload": "{{Button1.text === \"Submit\"}}",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 6,
-              "bottomRow": 41,
-              "isSortable": "{{Button1.text === \"Submi\"}}",
-              "parentRowSpace": 10,
+              "isSortable": "{{Button1.text === \"Submit\"}}",
+              "onPageChange": "{{showAlert('page changed','success')}}",
               "type": "TABLE_WIDGET",
-              "defaultSelectedRow": "0",
-              "hideCard": false,
               "animateLoading": true,
-              "parentColumnSpace": 18.0625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "primaryColumns.image.onClick"
-                },
-                {
-                  "key": "primaryColumns.customColumn1.onClick"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.menuItems.menuItemo4b50fefhb.onClick"
-                },
-                {
-                  "key": "primaryColumns.customColumn2.menuItems.menuItemkltqrcljyo.onClick"
-                }
-              ],
               "dynamicBindingPathList": [
                 {
                   "key": "tableData"
@@ -385,18 +297,6 @@
                   "key": "primaryColumns.gender.computedValue"
                 },
                 {
-                  "key": "primaryColumns.id.verticalAlignment"
-                },
-                {
-                  "key": "primaryColumns.id.fontStyle"
-                },
-                {
-                  "key": "primaryColumns.id.textSize"
-                },
-                {
-                  "key": "primaryColumns.id.horizontalAlignment"
-                },
-                {
                   "key": "primaryColumns.id.isCellVisible"
                 },
                 {
@@ -446,18 +346,172 @@
                 },
                 {
                   "key": "isSortable"
+                },
+                {
+                  "key": "isVisibleSearch"
+                },
+                {
+                  "key": "isVisibleFilters"
+                },
+                {
+                  "key": "isVisibleDownload"
+                },
+                {
+                  "key": "isVisiblePagination"
                 }
               ],
               "leftColumn": 2,
+              "delimiter": ",",
+              "isVisibleFilters": "{{Button1.text === \"Submit\"}}",
+              "isVisible": "{{Button1.text === \"Submit\"}}",
+              "fontStyle": "BOLD,ITALIC",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "textColor": "#F6F7F8",
+              "totalRecordsCount": "",
+              "isLoading": false,
+              "onSearchTextChanged": "{{showAlert('text changed','warning')}}",
+              "primaryColumnId": "id",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75,
+                "customColumn1": 103,
+                "t": 60,
+                "image": 125,
+                "name": 112,
+                "dob": 103,
+                "country": 133,
+                "email": 160
+              },
+              "widgetName": "Table",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "id",
+                "gender",
+                "latitude",
+                "longitude",
+                "dob",
+                "phone",
+                "email",
+                "image",
+                "country",
+                "name",
+                "t",
+                "customColumn1",
+                "customColumn2"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.id.isCellVisible"
+                },
+                {
+                  "key": "primaryColumns.id.horizontalAlignment"
+                },
+                {
+                  "key": "primaryColumns.id.textSize"
+                },
+                {
+                  "key": "primaryColumns.id.fontStyle"
+                },
+                {
+                  "key": "primaryColumns.id.verticalAlignment"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.isCellVisible"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.isDisabled"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.buttonVariant"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.isCellVisible"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.isDisabled"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.isCompact"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.menuVariant"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.iconName"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.menuItems.menuItemo4b50fefhb.isVisible"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.menuItems.menuItemo4b50fefhb.isDisabled"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isSortable"
+                },
+                {
+                  "key": "isVisibleSearch"
+                },
+                {
+                  "key": "isVisibleFilters"
+                },
+                {
+                  "key": "isVisibleDownload"
+                },
+                {
+                  "key": "isVisiblePagination"
+                }
+              ],
+              "compactMode": "DEFAULT",
+              "displayName": "Table",
+              "bottomRow": 49,
+              "parentRowSpace": 10,
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "onPageSizeChange": "{{showAlert('page size changed','error')}}",
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.image.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.menuItems.menuItemo4b50fefhb.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.menuItems.menuItemkltqrcljyo.onClick"
+                },
+                {
+                  "key": "onRowSelected"
+                },
+                {
+                  "key": "onPageChange"
+                },
+                {
+                  "key": "onPageSizeChange"
+                },
+                {
+                  "key": "onSearchTextChanged"
+                },
+                {
+                  "key": "onSort"
+                }
+              ],
               "primaryColumns": {
                 "id": {
                   "index": 0,
                   "width": 150,
                   "id": "id",
-                  "horizontalAlignment": "{{Table.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"RIGHT\" : \"LEFT\"))}}",
-                  "verticalAlignment": "{{Table.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submi\" ? \"TOP\" : \"BOTTOM\"))}}",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textSize": "{{Table.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"HEADING2\" : \"PARAGRAPH\"))}}",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -467,18 +521,18 @@
                   "label": "{{Button1.text}}",
                   "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
                   "iconName": "",
-                  "fontStyle": "{{Table.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submit\" ? \"BLOCK,UNDERLINE\" : \"ITALIC\"))}}",
-                  "textColor": "red",
-                  "cellBackground": "#03b365"
+                  "fontStyle": "BOLD,ITALIC",
+                  "textColor": "#F6F7F8",
+                  "cellBackground": "#2E3D49"
                 },
                 "gender": {
                   "index": 1,
                   "width": 150,
                   "id": "gender",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -486,16 +540,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "gender",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.gender))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "latitude": {
                   "index": 2,
                   "width": 150,
                   "id": "latitude",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -503,16 +560,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "latitude",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.latitude))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.latitude))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "longitude": {
                   "index": 3,
                   "width": 150,
                   "id": "longitude",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -520,7 +580,10 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "longitude",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.longitude))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.longitude))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "dob": {
                   "index": 4,
@@ -529,7 +592,7 @@
                   "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "date",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -542,16 +605,17 @@
                   "inputFormat": "YYYY-MM-DD HH:mm",
                   "outputFormat": "Do MMM YYYY",
                   "fontStyle": "BOLD,ITALIC",
-                  "textColor": "#38AFF4"
+                  "textColor": "#F6F7F8",
+                  "cellBackground": "#2E3D49"
                 },
                 "phone": {
                   "index": 5,
                   "width": 150,
                   "id": "phone",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -559,16 +623,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "phone",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "email": {
                   "index": 6,
                   "width": 150,
                   "id": "email",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -576,16 +643,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "email",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.email))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.email))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "image": {
                   "index": 7,
                   "width": 150,
                   "id": "image",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "image",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -595,16 +665,19 @@
                   "label": "image",
                   "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.image))}}",
                   "iconName": "",
-                  "onClick": "{{showModal('Modal1')}}"
+                  "onClick": "{{showModal('Modal1')}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "country": {
                   "index": 8,
                   "width": 150,
                   "id": "country",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -612,16 +685,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "country",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.country))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.country))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "name": {
                   "index": 9,
                   "width": 150,
                   "id": "name",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -629,16 +705,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "name",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "t": {
                   "index": 10,
                   "width": 150,
                   "id": "t",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "HEADING3",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -646,7 +725,10 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "t",
-                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( 'text'))}}"
+                  "computedValue": "{{Table.sanitizedTableData.map((currentRow) => ( 'text'))}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC"
                 },
                 "customColumn1": {
                   "index": 11,
@@ -662,13 +744,19 @@
                   "label": "Button column",
                   "computedValue": "",
                   "buttonStyle": "rgb(3, 179, 101)",
-                  "buttonColor": "#2E3D49",
+                  "buttonColor": "#F6F7F8",
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "iconName": "",
                   "buttonLabel": "{{Table.sanitizedTableData.map((currentRow) => ( 'Click'))}}",
                   "buttonVariant": "{{Table.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submi\" ? \"SECONDARY\" : \"TERTIARY\"))}}",
-                  "onClick": "{{showAlert('Table button clicked','success')}}"
+                  "onClick": "{{showAlert('Table button clicked','success')}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "textSize": "HEADING3"
                 },
                 "customColumn2": {
                   "index": 12,
@@ -736,10 +824,16 @@
                   "menuVariant": "{{Button1.text === \"Submit\" ? \"PRIMARY\" : \"SECONDARY\"}}",
                   "borderRadius": "ROUNDED",
                   "boxShadow": "VARIANT1",
-                  "boxShadowColor": "#2E3D49"
+                  "boxShadowColor": "#2E3D49",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "textSize": "HEADING3"
                 }
               },
-              "delimiter": ",",
+              "onRowSelected": "{{showAlert('row selected','info')}}",
               "defaultSearchText": "",
               "key": "68zn09z561",
               "derivedColumns": {
@@ -757,13 +851,19 @@
                   "label": "Button column",
                   "computedValue": "",
                   "buttonStyle": "rgb(3, 179, 101)",
-                  "buttonColor": "#2E3D49",
+                  "buttonColor": "#F6F7F8",
                   "menuColor": "#03B365",
                   "labelColor": "#FFFFFF",
                   "iconName": "",
                   "buttonLabel": "{{Table.sanitizedTableData.map((currentRow) => ( 'Click'))}}",
                   "buttonVariant": "{{Table.sanitizedTableData.map((currentRow) => ( Button1.text === \"Submi\" ? \"SECONDARY\" : \"TERTIARY\"))}}",
-                  "onClick": "{{showAlert('Table button clicked','success')}}"
+                  "onClick": "{{showAlert('Table button clicked','success')}}",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "textSize": "HEADING3"
                 },
                 "customColumn2": {
                   "index": 12,
@@ -829,42 +929,30 @@
                   "menuVariant": "{{Button1.text === \"Submit\" ? \"PRIMARY\" : \"SECONDARY\"}}",
                   "borderRadius": "ROUNDED",
                   "boxShadow": "VARIANT1",
-                  "boxShadowColor": "#2E3D49"
+                  "boxShadowColor": "#2E3D49",
+                  "cellBackground": "#2E3D49",
+                  "textColor": "#F6F7F8",
+                  "fontStyle": "BOLD,ITALIC",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "textSize": "HEADING3"
                 }
               },
               "rightColumn": 64,
-              "textSize": "PARAGRAPH",
+              "textSize": "HEADING3",
               "widgetId": "q711hs1cd9",
-              "isVisibleFilters": true,
               "tableData": "{{Query1.data}}",
-              "isVisible": "{{Button1.text === \"Submit\"}}",
               "label": "Data",
               "searchKey": "",
-              "enableClientSideSearch": true,
-              "version": 3,
-              "totalRecordsCount": "",
               "parentId": "0",
               "serverSidePaginationEnabled": false,
               "renderMode": "CANVAS",
-              "isLoading": false,
-              "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
-              "isVisiblePagination": true,
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": "{{Button1.text === \"Submit\"}}",
+              "isVisiblePagination": "{{Button1.text === \"Submit\"}}",
               "iconAlign": "left",
-              "primaryColumnId": "id",
-              "verticalAlignment": "CENTER",
-              "columnSizeMap": {
-                "task": 245,
-                "step": 62,
-                "status": 75,
-                "customColumn1": 103,
-                "t": 60,
-                "image": 125,
-                "name": 112,
-                "dob": 103,
-                "country": 133,
-                "email": 160
-              }
+              "cellBackground": "#2E3D49",
+              "verticalAlignment": "CENTER"
             },
             {
               "widgetName": "Button1",
@@ -1098,6 +1186,1902 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "width": 988
+            },
+            {
+              "template": {
+                "Image2": {
+                  "isVisible": true,
+                  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                  "imageShape": "RECTANGLE",
+                  "maxZoomLevel": 1,
+                  "enableRotation": false,
+                  "enableDownload": false,
+                  "objectFit": "contain",
+                  "image": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.avatar;\n              })();\n            })}}",
+                  "widgetName": "Image2",
+                  "version": 1,
+                  "animateLoading": true,
+                  "type": "IMAGE_WIDGET",
+                  "hideCard": false,
+                  "displayName": "Image",
+                  "key": "zq54ws4ih9",
+                  "iconSVG": "/static/media/icon.52d8fb96.svg",
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "image"
+                    }
+                  ],
+                  "dynamicTriggerPathList": [],
+                  "widgetId": "ginhth4d9o",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "leftColumn": 0,
+                  "rightColumn": 16,
+                  "topRow": 0,
+                  "bottomRow": 8,
+                  "parentId": "g7c0pflowt",
+                  "onClick": "{{showModal('Modal2')}}"
+                },
+                "Text6": {
+                  "isVisible": true,
+                  "text": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.name;\n              })();\n            })}}",
+                  "fontSize": "PARAGRAPH",
+                  "fontStyle": "BOLD",
+                  "textAlign": "LEFT",
+                  "textColor": "#231F20",
+                  "truncateButtonColor": "#FFC13D",
+                  "widgetName": "Text6",
+                  "shouldTruncate": false,
+                  "overflow": "NONE",
+                  "version": 1,
+                  "animateLoading": true,
+                  "type": "TEXT_WIDGET",
+                  "hideCard": false,
+                  "displayName": "Text",
+                  "key": "dvdfgj5agk",
+                  "iconSVG": "/static/media/icon.97c59b52.svg",
+                  "textStyle": "HEADING",
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "text"
+                    }
+                  ],
+                  "dynamicTriggerPathList": [],
+                  "widgetId": "o7hkpm6nn4",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "leftColumn": 16,
+                  "rightColumn": 28,
+                  "topRow": 0,
+                  "bottomRow": 4,
+                  "parentId": "g7c0pflowt"
+                },
+                "Text7": {
+                  "isVisible": true,
+                  "text": "{{List1.listData.map((currentItem, currentIndex) => {\n              return (function(){\n                return  currentItem.email;\n              })();\n            })}}",
+                  "fontSize": "PARAGRAPH",
+                  "fontStyle": "BOLD",
+                  "textAlign": "LEFT",
+                  "textColor": "#231F20",
+                  "truncateButtonColor": "#FFC13D",
+                  "widgetName": "Text7",
+                  "shouldTruncate": false,
+                  "overflow": "NONE",
+                  "version": 1,
+                  "animateLoading": true,
+                  "type": "TEXT_WIDGET",
+                  "hideCard": false,
+                  "displayName": "Text",
+                  "key": "dvdfgj5agk",
+                  "iconSVG": "/static/media/icon.97c59b52.svg",
+                  "textStyle": "BODY",
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "text"
+                    }
+                  ],
+                  "dynamicTriggerPathList": [],
+                  "widgetId": "zqrzc8tofj",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "leftColumn": 16,
+                  "rightColumn": 24,
+                  "topRow": 4,
+                  "bottomRow": 8,
+                  "parentId": "g7c0pflowt"
+                },
+                "MenuButton1": {
+                  "isVisible": true,
+                  "label": "Open Menu",
+                  "menuColor": "#03B365",
+                  "menuVariant": "PRIMARY",
+                  "placement": "CENTER",
+                  "isCompact": false,
+                  "isDisabled": false,
+                  "animateLoading": true,
+                  "menuItems": {
+                    "menuItem1": {
+                      "label": "First Menu Item",
+                      "id": "menuItem1",
+                      "widgetId": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 0
+                    },
+                    "menuItem2": {
+                      "label": "Second Menu Item",
+                      "id": "menuItem2",
+                      "widgetId": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 1
+                    },
+                    "menuItem3": {
+                      "label": "Third Menu Item",
+                      "id": "menuItem3",
+                      "widgetId": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 2
+                    }
+                  },
+                  "widgetName": "MenuButton1",
+                  "version": 1,
+                  "type": "MENU_BUTTON_WIDGET",
+                  "hideCard": false,
+                  "displayName": "Menu Button",
+                  "key": "j8giynk0v8",
+                  "iconSVG": "/static/media/icon.0341d17d.svg",
+                  "widgetId": "vkmxp4livq",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 6.3359375,
+                  "parentRowSpace": 10,
+                  "leftColumn": 42,
+                  "rightColumn": 58,
+                  "topRow": 2,
+                  "bottomRow": 6,
+                  "parentId": "g7c0pflowt",
+                  "logBlackList": {
+                    "isVisible": true,
+                    "label": true,
+                    "menuColor": true,
+                    "menuVariant": true,
+                    "placement": true,
+                    "isCompact": true,
+                    "isDisabled": true,
+                    "animateLoading": true,
+                    "menuItems": true,
+                    "widgetName": true,
+                    "version": true,
+                    "type": true,
+                    "hideCard": true,
+                    "displayName": true,
+                    "key": true,
+                    "iconSVG": true,
+                    "isCanvas": true,
+                    "minHeight": true,
+                    "widgetId": true,
+                    "renderMode": true,
+                    "isLoading": true,
+                    "parentColumnSpace": true,
+                    "parentRowSpace": true,
+                    "leftColumn": true,
+                    "rightColumn": true,
+                    "topRow": true,
+                    "bottomRow": true,
+                    "parentId": true
+                  }
+                },
+                "ButtonGroup1": {
+                  "isVisible": true,
+                  "widgetName": "ButtonGroup1",
+                  "orientation": "horizontal",
+                  "buttonVariant": "PRIMARY",
+                  "version": 1,
+                  "animateLoading": true,
+                  "groupButtons": {
+                    "groupButton1": {
+                      "label": "Favorite",
+                      "iconName": "heart",
+                      "id": "groupButton1",
+                      "widgetId": "",
+                      "buttonColor": "#03B365",
+                      "buttonType": "SIMPLE",
+                      "placement": "CENTER",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 0,
+                      "menuItems": {}
+                    },
+                    "groupButton2": {
+                      "label": "Add",
+                      "iconName": "add",
+                      "id": "groupButton2",
+                      "buttonColor": "#03B365",
+                      "buttonType": "SIMPLE",
+                      "placement": "CENTER",
+                      "widgetId": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 1,
+                      "menuItems": {}
+                    },
+                    "groupButton3": {
+                      "label": "More",
+                      "iconName": "more",
+                      "id": "groupButton3",
+                      "buttonType": "MENU",
+                      "placement": "CENTER",
+                      "buttonColor": "#03B365",
+                      "widgetId": "",
+                      "isVisible": true,
+                      "isDisabled": false,
+                      "index": 2,
+                      "menuItems": {
+                        "menuItem1": {
+                          "label": "First Option",
+                          "backgroundColor": "#FFFFFF",
+                          "id": "menuItem1",
+                          "widgetId": "",
+                          "onClick": "",
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "index": 0
+                        },
+                        "menuItem2": {
+                          "label": "Second Option",
+                          "backgroundColor": "#FFFFFF",
+                          "id": "menuItem2",
+                          "widgetId": "",
+                          "onClick": "",
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "index": 1
+                        },
+                        "menuItem3": {
+                          "label": "Delete",
+                          "iconName": "trash",
+                          "iconColor": "#FFFFFF",
+                          "iconAlign": "right",
+                          "textColor": "#FFFFFF",
+                          "backgroundColor": "#DD4B34",
+                          "id": "menuItem3",
+                          "widgetId": "",
+                          "onClick": "",
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "index": 2
+                        }
+                      }
+                    }
+                  },
+                  "type": "BUTTON_GROUP_WIDGET",
+                  "hideCard": false,
+                  "displayName": "Button Group",
+                  "key": "793ov2dewx",
+                  "iconSVG": "/static/media/icon.d6773218.svg",
+                  "isCanvas": false,
+                  "widgetId": "t4dwu43i3z",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 6.3359375,
+                  "parentRowSpace": 10,
+                  "leftColumn": 40,
+                  "rightColumn": 64,
+                  "topRow": 5,
+                  "bottomRow": 9,
+                  "parentId": "g7c0pflowt",
+                  "logBlackList": {
+                    "isVisible": true,
+                    "widgetName": true,
+                    "orientation": true,
+                    "buttonVariant": true,
+                    "version": true,
+                    "animateLoading": true,
+                    "groupButtons": true,
+                    "type": true,
+                    "hideCard": true,
+                    "displayName": true,
+                    "key": true,
+                    "iconSVG": true,
+                    "isCanvas": true,
+                    "minHeight": true,
+                    "widgetId": true,
+                    "renderMode": true,
+                    "isLoading": true,
+                    "parentColumnSpace": true,
+                    "parentRowSpace": true,
+                    "leftColumn": true,
+                    "rightColumn": true,
+                    "topRow": true,
+                    "bottomRow": true,
+                    "parentId": true
+                  }
+                },
+                "IconButton2": {
+                  "isVisible": true,
+                  "iconName": "plus",
+                  "borderRadius": "CIRCLE",
+                  "boxShadow": "NONE",
+                  "buttonColor": "#03B365",
+                  "buttonVariant": "PRIMARY",
+                  "isDisabled": false,
+                  "widgetName": "IconButton2",
+                  "version": 1,
+                  "animateLoading": true,
+                  "type": "ICON_BUTTON_WIDGET",
+                  "hideCard": false,
+                  "displayName": "Icon Button",
+                  "key": "vk8s0q8xa5",
+                  "iconSVG": "/static/media/icon.1a0c634a.svg",
+                  "widgetId": "d12gc5ro1g",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 8.029296875,
+                  "parentRowSpace": 10,
+                  "leftColumn": 39,
+                  "rightColumn": 43,
+                  "topRow": 0,
+                  "bottomRow": 4,
+                  "parentId": "g7c0pflowt",
+                  "logBlackList": {
+                    "isVisible": true,
+                    "iconName": true,
+                    "borderRadius": true,
+                    "boxShadow": true,
+                    "buttonColor": true,
+                    "buttonVariant": true,
+                    "isDisabled": true,
+                    "widgetName": true,
+                    "version": true,
+                    "animateLoading": true,
+                    "type": true,
+                    "hideCard": true,
+                    "displayName": true,
+                    "key": true,
+                    "iconSVG": true,
+                    "isCanvas": true,
+                    "minHeight": true,
+                    "widgetId": true,
+                    "renderMode": true,
+                    "isLoading": true,
+                    "parentColumnSpace": true,
+                    "parentRowSpace": true,
+                    "leftColumn": true,
+                    "rightColumn": true,
+                    "topRow": true,
+                    "bottomRow": true,
+                    "parentId": true
+                  }
+                },
+                "Checkbox1": {
+                  "isVisible": true,
+                  "label": "Label",
+                  "defaultCheckedState": true,
+                  "widgetName": "Checkbox1",
+                  "version": 1,
+                  "alignWidget": "LEFT",
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "animateLoading": true,
+                  "type": "CHECKBOX_WIDGET",
+                  "hideCard": false,
+                  "displayName": "Checkbox",
+                  "key": "bz0pnyslu7",
+                  "iconSVG": "/static/media/icon.aaab032b.svg",
+                  "widgetId": "598behay1q",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 8.029296875,
+                  "parentRowSpace": 10,
+                  "leftColumn": 1,
+                  "rightColumn": 21,
+                  "topRow": 10,
+                  "bottomRow": 14,
+                  "parentId": "g7c0pflowt",
+                  "logBlackList": {
+                    "isVisible": true,
+                    "label": true,
+                    "defaultCheckedState": true,
+                    "widgetName": true,
+                    "version": true,
+                    "alignWidget": true,
+                    "isDisabled": true,
+                    "isRequired": true,
+                    "animateLoading": true,
+                    "type": true,
+                    "hideCard": true,
+                    "displayName": true,
+                    "key": true,
+                    "iconSVG": true,
+                    "isCanvas": true,
+                    "minHeight": true,
+                    "widgetId": true,
+                    "renderMode": true,
+                    "isLoading": true,
+                    "parentColumnSpace": true,
+                    "parentRowSpace": true,
+                    "leftColumn": true,
+                    "rightColumn": true,
+                    "topRow": true,
+                    "bottomRow": true,
+                    "parentId": true
+                  },
+                  "onCheckChange": "{{showModal('Modal2')}}"
+                }
+              },
+              "widgetName": "List1",
+              "listData": "{{Api1.data.users}}",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "displayName": "List",
+              "iconSVG": "/static/media/icon.9925ee17.svg",
+              "topRow": 86,
+              "bottomRow": 147,
+              "parentRowSpace": 10,
+              "type": "LIST_WIDGET",
+              "hideCard": false,
+              "gridGap": "5",
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onListItemClick"
+                },
+                {
+                  "key": "template.Checkbox1.onCheckChange"
+                },
+                {
+                  "key": "template.Image2.onClick"
+                }
+              ],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "template.Image2.image"
+                },
+                {
+                  "key": "template.Text6.text"
+                },
+                {
+                  "key": "template.Text7.text"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "listData"
+                }
+              ],
+              "gridType": "vertical",
+              "enhancements": true,
+              "children": [
+                {
+                  "widgetName": "Canvas3",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "dropDisabled": true,
+                  "openParentPropertyPane": true,
+                  "minHeight": 400,
+                  "noPad": true,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "Container2",
+                      "borderColor": "transparent",
+                      "disallowCopy": true,
+                      "isCanvas": true,
+                      "displayName": "Container",
+                      "iconSVG": "/static/media/icon.1977dca3.svg",
+                      "topRow": 0,
+                      "bottomRow": 16,
+                      "dragDisabled": true,
+                      "type": "CONTAINER_WIDGET",
+                      "hideCard": false,
+                      "openParentPropertyPane": true,
+                      "isDeletable": false,
+                      "animateLoading": true,
+                      "leftColumn": 0,
+                      "children": [
+                        {
+                          "widgetName": "Canvas4",
+                          "detachFromLayout": true,
+                          "displayName": "Canvas",
+                          "widgetId": "g7c0pflowt",
+                          "containerStyle": "none",
+                          "topRow": 0,
+                          "bottomRow": 160,
+                          "parentRowSpace": 1,
+                          "isVisible": true,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "version": 1,
+                          "hideCard": true,
+                          "parentId": "8nppmeu7dx",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "children": [
+                            {
+                              "widgetName": "Image2",
+                              "onClick": "{{showModal('Modal2')}}",
+                              "displayName": "Image",
+                              "iconSVG": "/static/media/icon.52d8fb96.svg",
+                              "topRow": 0,
+                              "bottomRow": 8,
+                              "type": "IMAGE_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "imageShape": "RECTANGLE",
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "image"
+                                }
+                              ],
+                              "leftColumn": 0,
+                              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                              "key": "zq54ws4ih9",
+                              "image": "{{currentItem.avatar}}",
+                              "rightColumn": 16,
+                              "objectFit": "contain",
+                              "widgetId": "ginhth4d9o",
+                              "logBlackList": {
+                                "isVisible": true,
+                                "defaultImage": true,
+                                "imageShape": true,
+                                "maxZoomLevel": true,
+                                "enableRotation": true,
+                                "enableDownload": true,
+                                "objectFit": true,
+                                "image": true,
+                                "widgetName": true,
+                                "version": true,
+                                "animateLoading": true,
+                                "type": true,
+                                "hideCard": true,
+                                "displayName": true,
+                                "key": true,
+                                "iconSVG": true,
+                                "isCanvas": true,
+                                "dynamicBindingPathList": true,
+                                "dynamicTriggerPathList": true,
+                                "minHeight": true,
+                                "widgetId": true,
+                                "renderMode": true,
+                                "isLoading": true,
+                                "parentColumnSpace": true,
+                                "parentRowSpace": true,
+                                "leftColumn": true,
+                                "rightColumn": true,
+                                "topRow": true,
+                                "bottomRow": true,
+                                "parentId": true
+                              },
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "g7c0pflowt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "maxZoomLevel": 1,
+                              "enableDownload": false,
+                              "enableRotation": false
+                            },
+                            {
+                              "widgetName": "Text6",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "dynamicTriggerPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "leftColumn": 16,
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "{{currentItem.name}}",
+                              "key": "dvdfgj5agk",
+                              "rightColumn": 28,
+                              "textAlign": "LEFT",
+                              "widgetId": "o7hkpm6nn4",
+                              "logBlackList": {
+                                "isVisible": true,
+                                "text": true,
+                                "fontSize": true,
+                                "fontStyle": true,
+                                "textAlign": true,
+                                "textColor": true,
+                                "truncateButtonColor": true,
+                                "widgetName": true,
+                                "shouldTruncate": true,
+                                "overflow": true,
+                                "version": true,
+                                "animateLoading": true,
+                                "type": true,
+                                "hideCard": true,
+                                "displayName": true,
+                                "key": true,
+                                "iconSVG": true,
+                                "isCanvas": true,
+                                "textStyle": true,
+                                "dynamicBindingPathList": true,
+                                "dynamicTriggerPathList": true,
+                                "minHeight": true,
+                                "widgetId": true,
+                                "renderMode": true,
+                                "isLoading": true,
+                                "parentColumnSpace": true,
+                                "parentRowSpace": true,
+                                "leftColumn": true,
+                                "rightColumn": true,
+                                "topRow": true,
+                                "bottomRow": true,
+                                "parentId": true
+                              },
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "g7c0pflowt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH",
+                              "textStyle": "HEADING"
+                            },
+                            {
+                              "widgetName": "Text7",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 4,
+                              "bottomRow": 8,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "overflow": "NONE",
+                              "dynamicTriggerPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "text"
+                                }
+                              ],
+                              "leftColumn": 16,
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "{{currentItem.email}}",
+                              "key": "dvdfgj5agk",
+                              "rightColumn": 36,
+                              "textAlign": "LEFT",
+                              "widgetId": "zqrzc8tofj",
+                              "logBlackList": {
+                                "isVisible": true,
+                                "text": true,
+                                "fontSize": true,
+                                "fontStyle": true,
+                                "textAlign": true,
+                                "textColor": true,
+                                "truncateButtonColor": true,
+                                "widgetName": true,
+                                "shouldTruncate": true,
+                                "overflow": true,
+                                "version": true,
+                                "animateLoading": true,
+                                "type": true,
+                                "hideCard": true,
+                                "displayName": true,
+                                "key": true,
+                                "iconSVG": true,
+                                "isCanvas": true,
+                                "textStyle": true,
+                                "dynamicBindingPathList": true,
+                                "dynamicTriggerPathList": true,
+                                "minHeight": true,
+                                "widgetId": true,
+                                "renderMode": true,
+                                "isLoading": true,
+                                "parentColumnSpace": true,
+                                "parentRowSpace": true,
+                                "leftColumn": true,
+                                "rightColumn": true,
+                                "topRow": true,
+                                "bottomRow": true,
+                                "parentId": true
+                              },
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "version": 1,
+                              "parentId": "g7c0pflowt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "PARAGRAPH",
+                              "textStyle": "BODY"
+                            },
+                            {
+                              "isCompact": false,
+                              "widgetName": "MenuButton1",
+                              "displayName": "Menu Button",
+                              "iconSVG": "/static/media/icon.0341d17d.svg",
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "MENU_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.3359375,
+                              "leftColumn": 47,
+                              "isDisabled": false,
+                              "key": "j8giynk0v8",
+                              "rightColumn": 63,
+                              "menuVariant": "PRIMARY",
+                              "widgetId": "vkmxp4livq",
+                              "logBlackList": {
+                                "isVisible": true,
+                                "label": true,
+                                "menuColor": true,
+                                "menuVariant": true,
+                                "placement": true,
+                                "isCompact": true,
+                                "isDisabled": true,
+                                "animateLoading": true,
+                                "menuItems": true,
+                                "widgetName": true,
+                                "version": true,
+                                "type": true,
+                                "hideCard": true,
+                                "displayName": true,
+                                "key": true,
+                                "iconSVG": true,
+                                "isCanvas": true,
+                                "minHeight": true,
+                                "widgetId": true,
+                                "renderMode": true,
+                                "isLoading": true,
+                                "parentColumnSpace": true,
+                                "parentRowSpace": true,
+                                "leftColumn": true,
+                                "rightColumn": true,
+                                "topRow": true,
+                                "bottomRow": true,
+                                "parentId": true
+                              },
+                              "menuItems": {
+                                "menuItem1": {
+                                  "label": "First Menu Item",
+                                  "id": "menuItem1",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 0
+                                },
+                                "menuItem2": {
+                                  "label": "Second Menu Item",
+                                  "id": "menuItem2",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 1
+                                },
+                                "menuItem3": {
+                                  "label": "Third Menu Item",
+                                  "id": "menuItem3",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 2
+                                }
+                              },
+                              "isVisible": true,
+                              "label": "Open Menu",
+                              "version": 1,
+                              "parentId": "g7c0pflowt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "menuColor": "#03B365",
+                              "placement": "CENTER"
+                            },
+                            {
+                              "widgetName": "ButtonGroup1",
+                              "isCanvas": false,
+                              "displayName": "Button Group",
+                              "iconSVG": "/static/media/icon.d6773218.svg",
+                              "topRow": 5,
+                              "bottomRow": 9,
+                              "parentRowSpace": 10,
+                              "groupButtons": {
+                                "groupButton1": {
+                                  "label": "Favorite",
+                                  "iconName": "heart",
+                                  "id": "groupButton1",
+                                  "widgetId": "",
+                                  "buttonColor": "#03B365",
+                                  "buttonType": "SIMPLE",
+                                  "placement": "CENTER",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 0,
+                                  "menuItems": {}
+                                },
+                                "groupButton2": {
+                                  "label": "Add",
+                                  "iconName": "add",
+                                  "id": "groupButton2",
+                                  "buttonColor": "#03B365",
+                                  "buttonType": "SIMPLE",
+                                  "placement": "CENTER",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 1,
+                                  "menuItems": {}
+                                },
+                                "groupButton3": {
+                                  "label": "More",
+                                  "iconName": "more",
+                                  "id": "groupButton3",
+                                  "buttonType": "MENU",
+                                  "placement": "CENTER",
+                                  "buttonColor": "#03B365",
+                                  "widgetId": "",
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "index": 2,
+                                  "menuItems": {
+                                    "menuItem1": {
+                                      "label": "First Option",
+                                      "backgroundColor": "#FFFFFF",
+                                      "id": "menuItem1",
+                                      "widgetId": "",
+                                      "onClick": "",
+                                      "isVisible": true,
+                                      "isDisabled": false,
+                                      "index": 0
+                                    },
+                                    "menuItem2": {
+                                      "label": "Second Option",
+                                      "backgroundColor": "#FFFFFF",
+                                      "id": "menuItem2",
+                                      "widgetId": "",
+                                      "onClick": "",
+                                      "isVisible": true,
+                                      "isDisabled": false,
+                                      "index": 1
+                                    },
+                                    "menuItem3": {
+                                      "label": "Delete",
+                                      "iconName": "trash",
+                                      "iconColor": "#FFFFFF",
+                                      "iconAlign": "right",
+                                      "textColor": "#FFFFFF",
+                                      "backgroundColor": "#DD4B34",
+                                      "id": "menuItem3",
+                                      "widgetId": "",
+                                      "onClick": "",
+                                      "isVisible": true,
+                                      "isDisabled": false,
+                                      "index": 2
+                                    }
+                                  }
+                                }
+                              },
+                              "type": "BUTTON_GROUP_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 6.3359375,
+                              "leftColumn": 40,
+                              "key": "793ov2dewx",
+                              "orientation": "horizontal",
+                              "rightColumn": 64,
+                              "widgetId": "t4dwu43i3z",
+                              "logBlackList": {
+                                "isVisible": true,
+                                "widgetName": true,
+                                "orientation": true,
+                                "buttonVariant": true,
+                                "version": true,
+                                "animateLoading": true,
+                                "groupButtons": true,
+                                "type": true,
+                                "hideCard": true,
+                                "displayName": true,
+                                "key": true,
+                                "iconSVG": true,
+                                "isCanvas": true,
+                                "minHeight": true,
+                                "widgetId": true,
+                                "renderMode": true,
+                                "isLoading": true,
+                                "parentColumnSpace": true,
+                                "parentRowSpace": true,
+                                "leftColumn": true,
+                                "rightColumn": true,
+                                "topRow": true,
+                                "bottomRow": true,
+                                "parentId": true
+                              },
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "g7c0pflowt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "boxShadow": "NONE",
+                              "widgetName": "IconButton2",
+                              "buttonColor": "#03B365",
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634a.svg",
+                              "topRow": 0,
+                              "bottomRow": 4,
+                              "parentRowSpace": 10,
+                              "type": "ICON_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.029296875,
+                              "leftColumn": 39,
+                              "isDisabled": false,
+                              "key": "vk8s0q8xa5",
+                              "rightColumn": 43,
+                              "iconName": "plus",
+                              "widgetId": "d12gc5ro1g",
+                              "logBlackList": {
+                                "isVisible": true,
+                                "iconName": true,
+                                "borderRadius": true,
+                                "boxShadow": true,
+                                "buttonColor": true,
+                                "buttonVariant": true,
+                                "isDisabled": true,
+                                "widgetName": true,
+                                "version": true,
+                                "animateLoading": true,
+                                "type": true,
+                                "hideCard": true,
+                                "displayName": true,
+                                "key": true,
+                                "iconSVG": true,
+                                "isCanvas": true,
+                                "minHeight": true,
+                                "widgetId": true,
+                                "renderMode": true,
+                                "isLoading": true,
+                                "parentColumnSpace": true,
+                                "parentRowSpace": true,
+                                "leftColumn": true,
+                                "rightColumn": true,
+                                "topRow": true,
+                                "bottomRow": true,
+                                "parentId": true
+                              },
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "g7c0pflowt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "CIRCLE",
+                              "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "widgetName": "Checkbox1",
+                              "displayName": "Checkbox",
+                              "iconSVG": "/static/media/icon.aaab032b.svg",
+                              "topRow": 10,
+                              "bottomRow": 14,
+                              "parentRowSpace": 10,
+                              "type": "CHECKBOX_WIDGET",
+                              "alignWidget": "LEFT",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.029296875,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onCheckChange"
+                                }
+                              ],
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [],
+                              "onCheckChange": "{{showModal('Modal2')}}",
+                              "isDisabled": false,
+                              "key": "bz0pnyslu7",
+                              "isRequired": false,
+                              "rightColumn": 21,
+                              "widgetId": "598behay1q",
+                              "logBlackList": {
+                                "isVisible": true,
+                                "label": true,
+                                "defaultCheckedState": true,
+                                "widgetName": true,
+                                "version": true,
+                                "alignWidget": true,
+                                "isDisabled": true,
+                                "isRequired": true,
+                                "animateLoading": true,
+                                "type": true,
+                                "hideCard": true,
+                                "displayName": true,
+                                "key": true,
+                                "iconSVG": true,
+                                "isCanvas": true,
+                                "minHeight": true,
+                                "widgetId": true,
+                                "renderMode": true,
+                                "isLoading": true,
+                                "parentColumnSpace": true,
+                                "parentRowSpace": true,
+                                "leftColumn": true,
+                                "rightColumn": true,
+                                "topRow": true,
+                                "bottomRow": true,
+                                "parentId": true
+                              },
+                              "isVisible": true,
+                              "label": "Label",
+                              "version": 1,
+                              "parentId": "g7c0pflowt",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "defaultCheckedState": true
+                            }
+                          ],
+                          "key": "r2btblowfy"
+                        }
+                      ],
+                      "borderWidth": "0",
+                      "key": "q2y0ub38pb",
+                      "disablePropertyPane": true,
+                      "backgroundColor": "white",
+                      "rightColumn": 64,
+                      "widgetId": "8nppmeu7dx",
+                      "containerStyle": "card",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "a7lcu1mjzy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0"
+                    }
+                  ],
+                  "key": "r2btblowfy",
+                  "rightColumn": 433.5,
+                  "detachFromLayout": true,
+                  "widgetId": "a7lcu1mjzy",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "7dvvpgw0nt",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "privateWidgets": {
+                "Image2": true,
+                "Text6": true,
+                "Text7": true,
+                "MenuButton1": true,
+                "ButtonGroup1": true,
+                "IconButton2": true,
+                "Checkbox1": true
+              },
+              "key": "hqc0be1g8g",
+              "backgroundColor": "#2E3D49",
+              "rightColumn": 31,
+              "onListItemClick": "{{showAlert('List item clciked','success')}}",
+              "itemBackgroundColor": "grey",
+              "widgetId": "7dvvpgw0nt",
+              "isVisible": "{{Button1.text === \"Submit\"}}",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false
+            },
+            {
+              "widgetName": "Text8",
+              "borderColor": "#2E3D49",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 86,
+              "bottomRow": 109,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 34,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "borderWidth": "1",
+              "truncateButtonColor": "#FFC13D",
+              "text": "Page no: {{List1.pageNo}}\nPage size: {{List1.pageSize}}\nGap: {{List1.gridGap}}",
+              "key": "dvdfgj5agk",
+              "rightColumn": 50,
+              "textAlign": "LEFT",
+              "widgetId": "lnr6hunm7y",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Modal2",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e.svg",
+              "topRow": 0,
+              "bottomRow": 0,
+              "parentRowSpace": 1,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 1,
+              "leftColumn": 0,
+              "children": [
+                {
+                  "widgetName": "Canvas5",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 640,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 650,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton3",
+                      "onClick": "{{closeModal('Modal2')}}",
+                      "buttonColor": "#2E3D49",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 56,
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "key": "vk8s0q8xa5",
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "ccj9qlm65f",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "78dsx8c2vt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "SHARP",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "widgetName": "Text9",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "leftColumn": 1,
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Modal Title",
+                      "key": "dvdfgj5agk",
+                      "rightColumn": 41,
+                      "textAlign": "LEFT",
+                      "widgetId": "sc2b0b9elo",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "78dsx8c2vt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Button4",
+                      "onClick": "{{closeModal('Modal2')}}",
+                      "buttonColor": "#03B365",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 16,
+                      "bottomRow": 20,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 36,
+                      "text": "Close",
+                      "isDisabled": false,
+                      "key": "vmupv0g2go",
+                      "rightColumn": 48,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "k6huzmq64l",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "78dsx8c2vt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "buttonVariant": "SECONDARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "widgetName": "Button5",
+                      "buttonColor": "#03B365",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 16,
+                      "bottomRow": 20,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 48,
+                      "text": "Confirm",
+                      "isDisabled": false,
+                      "key": "vmupv0g2go",
+                      "rightColumn": 60,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "gj59n1fo2b",
+                      "buttonStyle": "PRIMARY_BUTTON",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "78dsx8c2vt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "widgetName": "Image3",
+                      "displayName": "Image",
+                      "iconSVG": "/static/media/icon.52d8fb96.svg",
+                      "topRow": 27,
+                      "bottomRow": 56,
+                      "parentRowSpace": 10,
+                      "type": "IMAGE_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 11.78125,
+                      "dynamicTriggerPathList": [],
+                      "imageShape": "RECTANGLE",
+                      "leftColumn": 5,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "image"
+                        }
+                      ],
+                      "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                      "key": "zq54ws4ih9",
+                      "image": "{{List1.selectedItem.avatar}}",
+                      "rightColumn": 61,
+                      "objectFit": "contain",
+                      "widgetId": "696w9g82kl",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "78dsx8c2vt",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "maxZoomLevel": 1,
+                      "enableDownload": false,
+                      "enableRotation": false
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "r2btblowfy",
+                  "rightColumn": 0,
+                  "detachFromLayout": true,
+                  "widgetId": "78dsx8c2vt",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "gxkolh9km3",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "key": "twsfzg1guh",
+              "height": 650,
+              "rightColumn": 0,
+              "detachFromLayout": true,
+              "widgetId": "gxkolh9km3",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "width": 766
+            },
+            {
+              "widgetName": "Text10",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 116,
+              "bottomRow": 147,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "SCROLL",
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 34,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{List1.selectedItem}}",
+              "key": "dvdfgj5agk",
+              "rightColumn": 50,
+              "textAlign": "LEFT",
+              "widgetId": "b9q6e6l4uq",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Image4",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.52d8fb96.svg",
+              "topRow": 151,
+              "bottomRow": 186,
+              "parentRowSpace": 10,
+              "type": "IMAGE_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 31,
+              "dynamicBindingPathList": [
+                {
+                  "key": "image"
+                }
+              ],
+              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+              "key": "zq54ws4ih9",
+              "image": "{{File_upload.files[0].data}}",
+              "rightColumn": 58,
+              "objectFit": "contain",
+              "widgetId": "iou1owjccw",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "enableRotation": false
+            },
+            {
+              "widgetName": "Text11",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 170,
+              "bottomRow": 174,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{File_upload.files[0].type}}",
+              "key": "dvdfgj5agk",
+              "rightColumn": 17,
+              "textAlign": "LEFT",
+              "widgetId": "b6wepdt3jw",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Form1",
+              "backgroundColor": "white",
+              "rightColumn": 22,
+              "isCanvas": true,
+              "displayName": "Form",
+              "iconSVG": "/static/media/icon.ea3e08d1.svg",
+              "widgetId": "bgviksi7pl",
+              "topRow": 178,
+              "bottomRow": 222,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "FORM_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "leftColumn": 0,
+              "children": [
+                {
+                  "widgetName": "Canvas6",
+                  "rightColumn": 433.5,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "z766840jed",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 390,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "bgviksi7pl",
+                  "minHeight": 400,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Text12",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "leftColumn": 1.5,
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Form",
+                      "key": "dvdfgj5agk",
+                      "rightColumn": 25.5,
+                      "textAlign": "LEFT",
+                      "widgetId": "ju9lu9bd86",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "z766840jed",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "resetFormOnClick": true,
+                      "widgetName": "FormButton1",
+                      "buttonColor": "#03B365",
+                      "displayName": "FormButton",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 33,
+                      "bottomRow": 37,
+                      "type": "FORM_BUTTON_WIDGET",
+                      "hideCard": true,
+                      "animateLoading": true,
+                      "leftColumn": 46,
+                      "text": "Submit",
+                      "key": "s0yhxtzpas",
+                      "rightColumn": 62,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "su51mlc13u",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "z766840jed",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": true,
+                      "buttonVariant": "PRIMARY"
+                    },
+                    {
+                      "resetFormOnClick": true,
+                      "widgetName": "FormButton2",
+                      "buttonColor": "#03B365",
+                      "displayName": "FormButton",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 33,
+                      "bottomRow": 37,
+                      "type": "FORM_BUTTON_WIDGET",
+                      "hideCard": true,
+                      "animateLoading": true,
+                      "leftColumn": 30,
+                      "text": "Reset",
+                      "key": "s0yhxtzpas",
+                      "rightColumn": 46,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "yk02l1yjf0",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "z766840jed",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "disabledWhenInvalid": false,
+                      "buttonVariant": "SECONDARY"
+                    }
+                  ],
+                  "key": "r2btblowfy"
+                }
+              ],
+              "key": "py2tsjk9ad"
+            },
+            {
+              "widgetName": "File_upload",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isDisabled"
+                }
+              ],
+              "displayName": "FilePicker",
+              "iconSVG": "/static/media/icon.7c5ad9c3.svg",
+              "topRow": 157,
+              "bottomRow": 161,
+              "parentRowSpace": 10,
+              "allowedFileTypes": [],
+              "type": "FILE_PICKER_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onFilesSelected"
+                }
+              ],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isDisabled"
+                }
+              ],
+              "isDisabled": "{{Button1.text === \"Submi\"}}",
+              "key": "rnywb770rz",
+              "onFilesSelected": "{{showAlert('file uploaded')}}",
+              "isRequired": "{{Button1.text === \"Submit\"}}",
+              "rightColumn": 17,
+              "isDefaultClickDisabled": true,
+              "widgetId": "kqy6gpadh6",
+              "isVisible": "{{Button1.text === \"Submit\"}}",
+              "label": "Upload Files",
+              "maxFileSize": "50",
+              "version": 1,
+              "fileDataType": "Base64",
+              "parentId": "0",
+              "selectedFiles": [],
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "files": [],
+              "maxNumFiles": "5"
+            },
+            {
+              "widgetName": "RichTextEditor1",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "isToolbarHidden"
+                },
+                {
+                  "key": "labelStyle"
+                }
+              ],
+              "displayName": "Rich Text Editor",
+              "iconSVG": "/static/media/icon.b35e139c.svg",
+              "labelText": "Label",
+              "topRow": 190,
+              "bottomRow": 233,
+              "parentRowSpace": 10,
+              "labelWidth": "5",
+              "type": "RICH_TEXT_EDITOR_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onTextChange"
+                }
+              ],
+              "isToolbarHidden": "{{Button1.text === \"Submi\"}}",
+              "leftColumn": 22,
+              "dynamicBindingPathList": [
+                {
+                  "key": "isRequired"
+                },
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "isDisabled"
+                },
+                {
+                  "key": "isToolbarHidden"
+                },
+                {
+                  "key": "labelStyle"
+                }
+              ],
+              "labelPosition": "Left",
+              "labelStyle": "{{Button1.text === \"Submit\" ? \"BOLD\" : \"ITALIC\"}}",
+              "labelTextColor": "#DD4B34",
+              "inputType": "html",
+              "isDisabled": "{{Button1.text === \"Submi\"}}",
+              "key": "zjzi94gwpj",
+              "labelTextSize": "HEADING3",
+              "isRequired": "{{Button1.text === \"Submit\"}}",
+              "rightColumn": 64,
+              "isDefaultClickDisabled": true,
+              "widgetId": "kf3mox7qpb",
+              "isVisible": "{{Button1.text === \"Submit\"}}",
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "right",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "defaultText": "This is the initial <b>content</b> of the editor",
+              "onTextChange": "{{showAlert('text changed')}}"
+            },
+            {
+              "widgetName": "Progress1",
+              "progressType": "circular",
+              "isCanvas": false,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "showResult"
+                },
+                {
+                  "key": "progress"
+                },
+                {
+                  "key": "steps"
+                }
+              ],
+              "displayName": "Progress",
+              "iconSVG": "/static/media/icon.9b0d7b96.svg",
+              "topRow": 241,
+              "bottomRow": 264,
+              "parentRowSpace": 10,
+              "type": "PROGRESS_WIDGET",
+              "isIndeterminate": false,
+              "hideCard": false,
+              "fillColor": "#2E3D49",
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                },
+                {
+                  "key": "showResult"
+                },
+                {
+                  "key": "progress"
+                },
+                {
+                  "key": "steps"
+                }
+              ],
+              "key": "3pkqhj3n3g",
+              "showResult": "{{Progress1.progress > 50}}",
+              "rightColumn": 30,
+              "counterClosewise": false,
+              "widgetId": "4zk41t1u5c",
+              "isVisible": "{{Button1.text === \"Submit\"}}",
+              "steps": "{{Input2.text}}",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "progress": "{{Input1.text}}",
+              "counterClockwise": false
+            },
+            {
+              "widgetName": "Text13",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b52.svg",
+              "topRow": 264,
+              "bottomRow": 272,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "parentColumnSpace": 18.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "#FFC13D",
+              "text": "{{Progress1.progress}}",
+              "key": "s4ej1bwytv",
+              "rightColumn": 18,
+              "textAlign": "LEFT",
+              "widgetId": "5nmr3z9g29",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "fontSize": "PARAGRAPH"
+            },
+            {
+              "widgetName": "Input1",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595.svg",
+              "topRow": 241,
+              "bottomRow": 245,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "resetOnSubmit": true,
+              "leftColumn": 36,
+              "labelPosition": "Left",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "1ekcnmpicv",
+              "isRequired": false,
+              "rightColumn": 56,
+              "widgetId": "3gdmmwaav4",
+              "isVisible": true,
+              "label": "Label",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "iconAlign": "left",
+              "defaultText": ""
+            },
+            {
+              "widgetName": "Input2",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595.svg",
+              "topRow": 248,
+              "bottomRow": 252,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "resetOnSubmit": true,
+              "leftColumn": 36,
+              "labelPosition": "Left",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "1ekcnmpicv",
+              "isRequired": false,
+              "rightColumn": 56,
+              "widgetId": "qzw2tj4znc",
+              "isVisible": true,
+              "label": "Label",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "iconAlign": "left",
+              "defaultText": ""
+            },
+            {
+              "widgetName": "Switch1",
+              "rightColumn": 49,
+              "displayName": "Switch",
+              "iconSVG": "/static/media/icon.a3115bc1.svg",
+              "widgetId": "nvszjxbf6h",
+              "topRow": 258,
+              "bottomRow": 262,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Label",
+              "type": "SWITCH_WIDGET",
+              "defaultSwitchState": true,
+              "version": 1,
+              "alignWidget": "LEFT",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 18.0625,
+              "leftColumn": 37,
+              "isDisabled": false,
+              "key": "jafn8h3r9a"
             }
           ]
         },
@@ -1111,25 +3095,69 @@
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
+          ],
+          [
+            {
+              "id": "vivek_Api1",
+              "name": "Api1",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
           ]
         ],
         "widgetNames": [
           "Button1",
           "Button2",
           "Button3",
+          "Button4",
+          "Button5",
+          "ButtonGroup1",
           "Canvas1",
           "Canvas2",
+          "Canvas3",
+          "Canvas4",
+          "Canvas5",
+          "Canvas6",
+          "Checkbox1",
           "Container1",
+          "Container2",
+          "File_upload",
+          "Form1",
+          "FormButton1",
+          "FormButton2",
           "IconButton1",
+          "IconButton2",
+          "IconButton3",
           "Image1",
+          "Image2",
+          "Image3",
+          "Image4",
+          "Input1",
+          "Input2",
+          "List1",
           "MainContainer",
+          "MenuButton1",
           "Modal1",
+          "Modal2",
+          "Progress1",
+          "RichTextEditor1",
+          "Switch1",
           "Table",
           "Text1",
+          "Text10",
+          "Text11",
+          "Text12",
+          "Text13",
           "Text2",
           "Text3",
           "Text4",
-          "Text5"
+          "Text5",
+          "Text6",
+          "Text7",
+          "Text8",
+          "Text9"
         ],
         "validOnPageLoadActions": true,
         "id": "vivek",
