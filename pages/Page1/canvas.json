@@ -27,6 +27,7 @@
           "leftColumn": 0,
           "children": [
             {
+
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -538,16 +539,19 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false
+
             }
           ]
         },
         "layoutOnLoadActions": [],
         "widgetNames": [
+
           "Divider1",
           "MainContainer",
           "Table1",
           "Table2",
           "Table3"
+
         ],
         "validOnPageLoadActions": true,
         "id": "Page1",
