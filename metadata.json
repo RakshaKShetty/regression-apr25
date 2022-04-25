@@ -1,9 +1,18 @@
 {
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
-  "publishedDefaultPageName": "Page2",
-  "unpublishedDefaultPageName": "Page2",
-  "invisibleActionFields": {},
+  "publishedDefaultPageName": "Page1",
+  "unpublishedDefaultPageName": "Page1",
+  "invisibleActionFields": {
+    "vivek_Api1": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "vivek_Query1": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    }
+  },
   "publishedTheme": {
     "name": "Classic",
     "displayName": "Classic",
