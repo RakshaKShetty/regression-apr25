@@ -301,6 +301,9 @@
                 },
                 {
                   "key": "isVisible"
+                },
+                {
+                  "key": "isSortable"
                 }
               ],
               "compactMode": "DEFAULT",
@@ -308,7 +311,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 6,
               "bottomRow": 41,
-              "isSortable": false,
+              "isSortable": "{{Button1.text === \"Submit\"}}",
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
               "defaultSelectedRow": "0",
@@ -440,6 +443,9 @@
                 },
                 {
                   "key": "isVisible"
+                },
+                {
+                  "key": "isSortable"
                 }
               ],
               "leftColumn": 2,
