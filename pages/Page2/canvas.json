@@ -407,31 +407,37 @@
                       "labelWidth": 5,
                       "type": "MULTI_SELECT_TREE_WIDGET",
                       "hideCard": false,
-                      "mode": "SHOW_ALL",
-                      "defaultOptionValue": [
-                        "GREEN"
-                      ],
+                      "mode": "SHOW_PARENT",
+                      "defaultOptionValue": "[\n  \"RED\"\n]",
                       "animateLoading": true,
                       "parentColumnSpace": 9.5927734375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "leftColumn": 33,
                       "dynamicBindingPathList": [],
-                      "labelPosition": "Left",
-                      "options": "[\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "labelPosition": "Top",
+                      "options": "[\n  {\n    \"label\": \"Blue1\",\n    \"value\": \"BLUE1\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue1\",\n        \"value\": \"DARK BLUE1\"\n      },\n      {\n        \"label\": \"Light Blue1\",\n        \"value\": \"LIGHT BLUE1\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green1\",\n    \"value\": \"GREEN1\"\n  },\n  {\n    \"label\": \"Red1\",\n    \"value\": \"RED1\"\n  },\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "labelStyle": "BOLD,ITALIC",
+                      "labelTextColor": "#3366FF",
                       "placeholderText": "Select option(s)",
                       "isDisabled": false,
                       "key": "21l7fqq0n8",
-                      "isRequired": false,
+                      "labelTextSize": "HEADING2",
+                      "isRequired": true,
                       "rightColumn": 62,
                       "widgetId": "0t0y6oj0nt",
                       "isVisible": true,
                       "version": 1,
-                      "expandAll": false,
+                      "expandAll": true,
                       "parentId": "0ujqj6qcbe",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "allowClear": false
+                      "onOptionChange": "{{showAlert('option added')}}",
+                      "allowClear": true
                     }
                   ],
                   "key": "bsx0kd5w7a"
