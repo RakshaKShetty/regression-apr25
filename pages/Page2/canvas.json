@@ -1,0 +1,524 @@
+{
+  "unpublishedPage": {
+    "name": "Page2",
+    "slug": "page2",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 750,
+          "containerStyle": "none",
+          "snapRows": 56,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 57,
+          "minHeight": 570,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Statbox1",
+              "backgroundColor": "white",
+              "rightColumn": 64,
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7b.svg",
+              "widgetId": "26xmm28q6u",
+              "topRow": 1,
+              "bottomRow": 68,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.0625,
+              "leftColumn": 1,
+              "children": [
+                {
+                  "widgetName": "Canvas1",
+                  "rightColumn": 161,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "0ujqj6qcbe",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 520,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "26xmm28q6u",
+                  "minHeight": 140,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "leftColumn": 1,
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Page Views",
+                      "key": "oj8y4y6sc3",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "vp9ukg57en",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "version": 1,
+                      "parentId": "0ujqj6qcbe",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "leftColumn": 1,
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "2.6 M",
+                      "key": "oj8y4y6sc3",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "aph9ez9pji",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "0ujqj6qcbe",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "HEADING1"
+                    },
+                    {
+                      "widgetName": "Text3",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 8,
+                      "bottomRow": 12,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "leftColumn": 1,
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "21% more than last month",
+                      "key": "oj8y4y6sc3",
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "widgetId": "904gbivx0q",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03B365",
+                      "version": 1,
+                      "parentId": "0ujqj6qcbe",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH2"
+                    },
+                    {
+                      "boxShadow": "NONE",
+                      "widgetName": "IconButton1",
+                      "buttonColor": "#03B365",
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 2,
+                      "bottomRow": 10,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "leftColumn": 46,
+                      "isDisabled": false,
+                      "key": "scliykpchf",
+                      "rightColumn": 62,
+                      "iconName": "arrow-top-right",
+                      "widgetId": "b6qqy3eugq",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "0ujqj6qcbe",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "CIRCLE",
+                      "buttonVariant": "PRIMARY"
+                    },
+                    {
+                      "widgetName": "Divider1",
+                      "thickness": "5",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "orientation"
+                        },
+                        {
+                          "key": "strokeStyle"
+                        },
+                        {
+                          "key": "thickness"
+                        },
+                        {
+                          "key": "dividerColor"
+                        },
+                        {
+                          "key": "capType"
+                        }
+                      ],
+                      "displayName": "Divider",
+                      "iconSVG": "/static/media/icon.cbe8f608.svg",
+                      "topRow": 16,
+                      "bottomRow": 20,
+                      "parentRowSpace": 10,
+                      "type": "DIVIDER_WIDGET",
+                      "capType": "{{Rating1.value==5?\"arrow\":\"dot\"}}",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.12109375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "orientation"
+                        },
+                        {
+                          "key": "strokeStyle"
+                        },
+                        {
+                          "key": "dividerColor"
+                        },
+                        {
+                          "key": "capType"
+                        }
+                      ],
+                      "key": "v1iizpebcg",
+                      "dividerColor": "{{Rating1.value>5?\"Orange\":\"Brown\"}}",
+                      "orientation": "{{Rating1.maxCount>10?\"vertical\":\"horizontal\"}}",
+                      "strokeStyle": "{{Rating1.value>5?\"dashed\":\"dotted\"}}",
+                      "rightColumn": 23,
+                      "widgetId": "dapol8zvmg",
+                      "capSide": -1,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "0ujqj6qcbe",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
+                    {
+                      "widgetName": "Rating1",
+                      "onRateChanged": "{{showAlert('hey')}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isAllowHalf"
+                        }
+                      ],
+                      "displayName": "Rating",
+                      "iconSVG": "/static/media/icon.914eb943.svg",
+                      "topRow": 38,
+                      "bottomRow": 42,
+                      "parentRowSpace": 10,
+                      "type": "RATE_WIDGET",
+                      "maxCount": "10",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.12109375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onRateChanged"
+                        }
+                      ],
+                      "leftColumn": 4,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "isAllowHalf"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "4c6ezzeoh3",
+                      "isRequired": false,
+                      "rightColumn": 41,
+                      "inactiveColor": "#D6D6D6",
+                      "widgetId": "m4ga4uablg",
+                      "isVisible": true,
+                      "parentId": "0ujqj6qcbe",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultRate": "4",
+                      "activeColor": "Cyan",
+                      "size": "LARGE",
+                      "isAllowHalf": "{{Divider1.thickness>2}}",
+                      "tooltips": "[\n  \"Terrible\",\n  \"Bad\",\n  \"Neutral\",\n  \"Good\",\n  \"Great\",\n\t\"Awsome\",\n\t\"Greatest\"\n]"
+                    },
+                    {
+                      "widgetName": "RichTextEditor1",
+                      "displayName": "Rich Text Editor",
+                      "iconSVG": "/static/media/icon.b35e139c.svg",
+                      "labelText": "Label",
+                      "topRow": 18,
+                      "bottomRow": 38,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "RICH_TEXT_EDITOR_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.12109375,
+                      "leftColumn": 30,
+                      "labelPosition": "Left",
+                      "inputType": "html",
+                      "isDisabled": false,
+                      "key": "h4qyrc0dyw",
+                      "isRequired": false,
+                      "rightColumn": 54,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "ddbthyxo0z",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "0ujqj6qcbe",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "defaultText": "This is the initial <b>content</b> of the editor"
+                    },
+                    {
+                      "widgetName": "Select1",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Label",
+                      "topRow": 24,
+                      "bottomRow": 28,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.12109375,
+                      "leftColumn": 8,
+                      "labelPosition": "Left",
+                      "options": [
+                        {
+                          "label": "Blue",
+                          "value": "BLUE"
+                        },
+                        {
+                          "label": "Green",
+                          "value": "GREEN"
+                        },
+                        {
+                          "label": "Red",
+                          "value": "RED"
+                        }
+                      ],
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "ppj0ch6qyy",
+                      "isRequired": false,
+                      "rightColumn": 28,
+                      "widgetId": "ljouik1612",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "0ujqj6qcbe",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false
+                    },
+                    {
+                      "widgetName": "TreeSelect1",
+                      "displayName": "TreeSelect",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "Label",
+                      "topRow": 46,
+                      "bottomRow": 50,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SINGLE_SELECT_TREE_WIDGET",
+                      "hideCard": false,
+                      "defaultOptionValue": "RED",
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5927734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [],
+                      "labelPosition": "Top",
+                      "options": "[\n  {\n    \"label\": \"Blue1\",\n    \"value\": \"BLUE1\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue1\",\n        \"value\": \"DARK BLUE1\"\n      },\n      {\n        \"label\": \"Light Blue1\",\n        \"value\": \"LIGHT BLUE1\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green1\",\n    \"value\": \"GREEN1\"\n  },\n  {\n    \"label\": \"Red1\",\n    \"value\": \"RED1\"\n  },\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "labelStyle": "BOLD,ITALIC",
+                      "labelTextColor": "#DD4B34",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "o5f0kyyb9y",
+                      "labelTextSize": "HEADING2",
+                      "isRequired": true,
+                      "rightColumn": 28,
+                      "widgetId": "v1m24363xh",
+                      "isVisible": true,
+                      "version": 1,
+                      "expandAll": true,
+                      "parentId": "0ujqj6qcbe",
+                      "labelAlignment": "right",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "onOptionChange": "{{showAlert('option updated')}}",
+                      "allowClear": true
+                    },
+                    {
+                      "widgetName": "MultiTreeSelect1",
+                      "displayName": "Multi TreeSelect",
+                      "iconSVG": "/static/media/icon.b3e28afb.svg",
+                      "labelText": "Label",
+                      "topRow": 46,
+                      "bottomRow": 50,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "MULTI_SELECT_TREE_WIDGET",
+                      "hideCard": false,
+                      "mode": "SHOW_ALL",
+                      "defaultOptionValue": [
+                        "GREEN"
+                      ],
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.5927734375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [],
+                      "labelPosition": "Left",
+                      "options": "[\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "placeholderText": "Select option(s)",
+                      "isDisabled": false,
+                      "key": "21l7fqq0n8",
+                      "isRequired": false,
+                      "rightColumn": 62,
+                      "widgetId": "0t0y6oj0nt",
+                      "isVisible": true,
+                      "version": 1,
+                      "expandAll": false,
+                      "parentId": "0ujqj6qcbe",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "allowClear": false
+                    }
+                  ],
+                  "key": "bsx0kd5w7a"
+                }
+              ],
+              "key": "f1tr6tbrei"
+            },
+            {
+              "boxShadow": "VARIANT2",
+              "widgetName": "IconButton2",
+              "onClick": "{{showAlert('clicked')}}",
+              "buttonColor": "#38AFF4",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "iconName"
+                },
+                {
+                  "key": "buttonVariant"
+                }
+              ],
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634a.svg",
+              "topRow": 68,
+              "bottomRow": 79,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 9.12109375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 11,
+              "dynamicBindingPathList": [
+                {
+                  "key": "iconName"
+                },
+                {
+                  "key": "buttonVariant"
+                }
+              ],
+              "isDisabled": false,
+              "key": "scliykpchf",
+              "rightColumn": 28,
+              "iconName": "{{Rating1.value>5?\"print\":\"play\"}}",
+              "widgetId": "sg0btcb7os",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "ROUNDED",
+              "buttonVariant": "{{Rating1.value<5?\"PRIMARY\":\"TERTIARY\"}}",
+              "boxShadowColor": "#F86A2B"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "widgetNames": [
+          "Canvas1",
+          "Divider1",
+          "IconButton1",
+          "IconButton2",
+          "MainContainer",
+          "MultiTreeSelect1",
+          "Rating1",
+          "RichTextEditor1",
+          "Select1",
+          "Statbox1",
+          "Text1",
+          "Text2",
+          "Text3",
+          "TreeSelect1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page2",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6266664b3e537f47d826768d_6266828a01f360366e25e259"
+}
