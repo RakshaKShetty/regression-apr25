@@ -308,7 +308,7 @@
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 6,
               "bottomRow": 41,
-              "isSortable": true,
+              "isSortable": false,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
               "defaultSelectedRow": "0",
