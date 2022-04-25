@@ -1,0 +1,354 @@
+{
+  "unpublishedPage": {
+    "name": "Page4",
+    "slug": "page4",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 560,
+          "containerStyle": "none",
+          "snapRows": 56,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 57,
+          "minHeight": 570,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "schema": {
+                "__root_schema__": {
+                  "children": {
+                    "name": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "John",
+                      "isCustomField": false,
+                      "accessor": "name",
+                      "identifier": "name",
+                      "position": 0,
+                      "originalIdentifier": "name",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Name"
+                    },
+                    "date_of_birth": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.date_of_birth, \"DD/MM/YYYY\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "fieldType": "Datepicker",
+                      "sourceData": "20/02/1990",
+                      "isCustomField": false,
+                      "accessor": "date_of_birth",
+                      "identifier": "date_of_birth",
+                      "position": 1,
+                      "originalIdentifier": "date_of_birth",
+                      "closeOnSelection": false,
+                      "convertToISO": false,
+                      "dateFormat": "DD/MM/YYYY",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isVisible": true,
+                      "label": "Date Of Birth",
+                      "maxDate": "2121-12-31T18:29:00.000Z",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "shortcuts": false,
+                      "timePrecision": "minute"
+                    },
+                    "employee_id": {
+                      "children": {},
+                      "dataType": "number",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.employee_id))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "fieldType": "Number Input",
+                      "sourceData": 1001,
+                      "isCustomField": false,
+                      "accessor": "employee_id",
+                      "identifier": "employee_id",
+                      "position": 2,
+                      "originalIdentifier": "employee_id",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "label": "Employee Id"
+                    },
+                    "customField1": {
+                      "children": {
+                        "customField1": {
+                          "children": {},
+                          "dataType": "object",
+                          "defaultValue": {},
+                          "fieldType": "Object",
+                          "sourceData": {},
+                          "isCustomField": true,
+                          "accessor": "customField1",
+                          "identifier": "customField1",
+                          "position": 0,
+                          "originalIdentifier": "customField1",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "label": "Custom Field 1"
+                        },
+                        "customField2": {
+                          "children": {},
+                          "dataType": "string",
+                          "defaultValue": "",
+                          "fieldType": "Phone Number Input",
+                          "sourceData": "",
+                          "isCustomField": true,
+                          "accessor": "customField2",
+                          "identifier": "customField2",
+                          "position": 0,
+                          "originalIdentifier": "customField2",
+                          "allowDialCodeChange": true,
+                          "dialCode": "+93",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isSpellCheck": false,
+                          "isVisible": true,
+                          "label": "Custom Field 2"
+                        }
+                      },
+                      "dataType": "object",
+                      "defaultValue": {},
+                      "fieldType": "Object",
+                      "sourceData": {},
+                      "isCustomField": true,
+                      "accessor": "customField1",
+                      "identifier": "customField1",
+                      "position": 3,
+                      "originalIdentifier": "customField1",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isVisible": true,
+                      "label": "Custom Field 1"
+                    },
+                    "customField2": {
+                      "children": {
+                        "__array_item__": {
+                          "children": {
+                            "firstField": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "firstField",
+                              "identifier": "firstField",
+                              "position": 0,
+                              "originalIdentifier": "firstField",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "First Field"
+                            },
+                            "customField1": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Currency Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField1",
+                              "identifier": "customField1",
+                              "position": 0,
+                              "originalIdentifier": "customField1",
+                              "currencyCountryCode": "USD",
+                              "decimalsInCurrency": 0,
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Custom Field 1",
+                              "allowCurrencyChange": true
+                            },
+                            "customField2": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Phone Number Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField2",
+                              "identifier": "customField2",
+                              "position": 0,
+                              "originalIdentifier": "customField2",
+                              "allowDialCodeChange": true,
+                              "dialCode": "+1",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Custom Field 2"
+                            },
+                            "__array_item__": {
+                              "children": {
+                                "customField2": {
+                                  "dialCode": "+358"
+                                }
+                              }
+                            }
+                          },
+                          "dataType": "object",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "firstField": ""
+                          },
+                          "isCustomField": true,
+                          "accessor": "__array_item__",
+                          "identifier": "__array_item__",
+                          "position": -1,
+                          "originalIdentifier": "__array_item__",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "label": "Array Item"
+                        }
+                      },
+                      "dataType": "array",
+                      "defaultValue": [
+                        {
+                          "firstField": ""
+                        }
+                      ],
+                      "fieldType": "Array",
+                      "sourceData": [
+                        {
+                          "firstField": ""
+                        }
+                      ],
+                      "isCustomField": true,
+                      "accessor": "customField2",
+                      "identifier": "customField2",
+                      "position": 4,
+                      "originalIdentifier": "customField2",
+                      "backgroundColor": "#FAFAFA",
+                      "isCollapsible": true,
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isVisible": true,
+                      "label": "Custom Field 2"
+                    }
+                  },
+                  "dataType": "object",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                  "fieldType": "Object",
+                  "sourceData": {
+                    "name": "John",
+                    "date_of_birth": "20/02/1990",
+                    "employee_id": 1001
+                  },
+                  "isCustomField": false,
+                  "accessor": "__root_schema__",
+                  "identifier": "__root_schema__",
+                  "position": -1,
+                  "originalIdentifier": "__root_schema__",
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "label": ""
+                }
+              },
+              "widgetName": "JSONForm1",
+              "submitButtonStyles": {
+                "buttonColor": "#03B365",
+                "buttonVariant": "PRIMARY"
+              },
+              "dynamicPropertyPathList": [
+                {
+                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                }
+              ],
+              "displayName": "JSON Form",
+              "iconSVG": "/static/media/icon.5b428de1.svg",
+              "topRow": 1,
+              "bottomRow": 51,
+              "fieldLimitExceeded": false,
+              "parentRowSpace": 10,
+              "title": "Form",
+              "type": "JSON_FORM_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 5,
+              "dynamicBindingPathList": [
+                {
+                  "key": "schema.__root_schema__.children.name.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.employee_id.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.defaultValue"
+                }
+              ],
+              "sourceData": {
+                "name": "John",
+                "date_of_birth": "20/02/1990",
+                "employee_id": 1001
+              },
+              "showReset": true,
+              "resetButtonLabel": "Reset",
+              "key": "vzw8c11ouo",
+              "backgroundColor": "#fff",
+              "rightColumn": 46,
+              "autoGenerateForm": true,
+              "widgetId": "nd5rujxv8e",
+              "resetButtonStyles": {
+                "buttonColor": "#03B365",
+                "buttonVariant": "SECONDARY"
+              },
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "scrollContents": true,
+              "fixedFooter": true,
+              "submitButtonLabel": "Submit",
+              "disabledWhenInvalid": true
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "widgetNames": [
+          "JSONForm1",
+          "MainContainer"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page4",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6266664b3e537f47d826768d_62669e69cb603a05f907feaa"
+}

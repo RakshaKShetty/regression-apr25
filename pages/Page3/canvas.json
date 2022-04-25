@@ -1,0 +1,416 @@
+{
+  "unpublishedPage": {
+    "name": "Page3",
+    "slug": "page3",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 560,
+          "containerStyle": "none",
+          "snapRows": 56,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 57,
+          "minHeight": 570,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "schema": {
+                "__root_schema__": {
+                  "children": {
+                    "Personal_Details": {
+                      "children": {
+                        "__array_item__": {
+                          "children": {
+                            "name": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "John",
+                              "isCustomField": false,
+                              "accessor": "name",
+                              "identifier": "name",
+                              "position": 0,
+                              "originalIdentifier": "name",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Name"
+                            },
+                            "date_of_birth": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Datepicker",
+                              "sourceData": "20/02/1990",
+                              "isCustomField": false,
+                              "accessor": "date_of_birth",
+                              "identifier": "date_of_birth",
+                              "position": 1,
+                              "originalIdentifier": "date_of_birth",
+                              "closeOnSelection": false,
+                              "convertToISO": false,
+                              "dateFormat": "DD/MM/YYYY",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "label": "Date Of Birth",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "shortcuts": false,
+                              "timePrecision": "minute"
+                            },
+                            "employee_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "fieldType": "Number Input",
+                              "sourceData": 1001,
+                              "isCustomField": false,
+                              "accessor": "employee_id",
+                              "identifier": "employee_id",
+                              "position": 2,
+                              "originalIdentifier": "employee_id",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Employee Id"
+                            },
+                            "customField1": {
+                              "children": {
+                                "customField1": {
+                                  "children": {},
+                                  "dataType": "string",
+                                  "defaultValue": "",
+                                  "fieldType": "Radio Group",
+                                  "sourceData": "",
+                                  "isCustomField": true,
+                                  "accessor": "customField1",
+                                  "identifier": "customField1",
+                                  "position": 0,
+                                  "originalIdentifier": "customField1",
+                                  "isDisabled": false,
+                                  "isRequired": false,
+                                  "isVisible": true,
+                                  "label": "Custom Field 1",
+                                  "options": [
+                                    {
+                                      "label": "Yes",
+                                      "value": "Y"
+                                    },
+                                    {
+                                      "label": "No",
+                                      "value": "N"
+                                    }
+                                  ]
+                                }
+                              },
+                              "dataType": "object",
+                              "defaultValue": {},
+                              "fieldType": "Object",
+                              "sourceData": {},
+                              "isCustomField": true,
+                              "accessor": "customField1",
+                              "identifier": "customField1",
+                              "position": 3,
+                              "originalIdentifier": "customField1",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "label": "Custom Field 1"
+                            },
+                            "__array_item__": {
+                              "children": {
+                                "customField1": {
+                                  "currencyCountryCode": "AED"
+                                }
+                              }
+                            }
+                          },
+                          "dataType": "object",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "name": "John",
+                            "date_of_birth": "20/02/1990",
+                            "employee_id": 1001
+                          },
+                          "isCustomField": false,
+                          "accessor": "__array_item__",
+                          "identifier": "__array_item__",
+                          "position": -1,
+                          "originalIdentifier": "__array_item__",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "label": "Array Item"
+                        }
+                      },
+                      "dataType": "array",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"Personal Details\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "fieldType": "Array",
+                      "sourceData": [
+                        {
+                          "name": "John",
+                          "date_of_birth": "20/02/1990",
+                          "employee_id": 1001
+                        }
+                      ],
+                      "isCustomField": false,
+                      "accessor": "Personal Details",
+                      "identifier": "Personal_Details",
+                      "position": 0,
+                      "originalIdentifier": "Personal Details",
+                      "backgroundColor": "#FAFAFA",
+                      "isCollapsible": true,
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isVisible": true,
+                      "label": "Personal Details",
+                      "labelTextSize": "HEADING2",
+                      "labelTextColor": "Magenta",
+                      "labelStyle": "ITALIC,BOLD"
+                    },
+                    "College_details": {
+                      "children": {
+                        "__array_item__": {
+                          "children": {
+                            "college_name": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "John",
+                              "isCustomField": false,
+                              "accessor": "college name",
+                              "identifier": "college_name",
+                              "position": 0,
+                              "originalIdentifier": "college name",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "College Name"
+                            },
+                            "date_of_joining": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Datepicker",
+                              "sourceData": "20/02/1990",
+                              "isCustomField": false,
+                              "accessor": "date_of_joining",
+                              "identifier": "date_of_joining",
+                              "position": 1,
+                              "originalIdentifier": "date_of_joining",
+                              "closeOnSelection": false,
+                              "convertToISO": false,
+                              "dateFormat": "DD/MM/YYYY",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "label": "Date Of Joining",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "shortcuts": false,
+                              "timePrecision": "minute"
+                            },
+                            "USN": {
+                              "children": {},
+                              "dataType": "number",
+                              "fieldType": "Number Input",
+                              "sourceData": 1001,
+                              "isCustomField": false,
+                              "accessor": "USN",
+                              "identifier": "USN",
+                              "position": 2,
+                              "originalIdentifier": "USN",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "USN"
+                            }
+                          },
+                          "dataType": "object",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "college name": "John",
+                            "date_of_joining": "20/02/1990",
+                            "USN": 1001
+                          },
+                          "isCustomField": false,
+                          "accessor": "__array_item__",
+                          "identifier": "__array_item__",
+                          "position": -1,
+                          "originalIdentifier": "__array_item__",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "label": "Array Item"
+                        }
+                      },
+                      "dataType": "array",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"College details\"]))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "fieldType": "Array",
+                      "sourceData": [
+                        {
+                          "college name": "John",
+                          "date_of_joining": "20/02/1990",
+                          "USN": 1001
+                        }
+                      ],
+                      "isCustomField": false,
+                      "accessor": "College details",
+                      "identifier": "College_details",
+                      "position": 1,
+                      "originalIdentifier": "College details",
+                      "backgroundColor": "#FAFAFA",
+                      "isCollapsible": true,
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isVisible": true,
+                      "label": "College Details",
+                      "labelTextSize": "HEADING2",
+                      "labelStyle": "BOLD",
+                      "labelTextColor": "Olive"
+                    }
+                  },
+                  "dataType": "object",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                  "fieldType": "Object",
+                  "sourceData": {
+                    "Personal Details": [
+                      {
+                        "name": "John",
+                        "date_of_birth": "20/02/1990",
+                        "employee_id": 1001
+                      }
+                    ],
+                    "College details": [
+                      {
+                        "college name": "John",
+                        "date_of_joining": "20/02/1990",
+                        "USN": 1001
+                      }
+                    ]
+                  },
+                  "isCustomField": false,
+                  "accessor": "__root_schema__",
+                  "identifier": "__root_schema__",
+                  "position": -1,
+                  "originalIdentifier": "__root_schema__",
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "label": ""
+                }
+              },
+              "boxShadow": "VARIANT4",
+              "widgetName": "JSONForm1",
+              "submitButtonStyles": {
+                "buttonColor": "#38AFF4",
+                "buttonVariant": "PRIMARY",
+                "borderRadius": "ROUNDED",
+                "boxShadow": "VARIANT2",
+                "boxShadowColor": "#DD4B34",
+                "iconName": "annotation",
+                "iconAlign": "right",
+                "placement": "CENTER"
+              },
+              "borderColor": "#38AFF4",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                }
+              ],
+              "displayName": "JSON Form",
+              "iconSVG": "/static/media/icon.5b428de1.svg",
+              "onSubmit": "{{showAlert('submitted')}}",
+              "topRow": 2,
+              "bottomRow": 52,
+              "fieldLimitExceeded": false,
+              "parentRowSpace": 10,
+              "title": "Form",
+              "type": "JSON_FORM_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "leftColumn": 5,
+              "dynamicBindingPathList": [
+                {
+                  "key": "schema.__root_schema__.children.College_details.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Personal_Details.defaultValue"
+                }
+              ],
+              "borderWidth": "2",
+              "sourceData": "{\n\"Personal Details\":\n[{\n  \"name\": \"John\",\n  \"date_of_birth\": \"20/02/1990\",\n  \"employee_id\": 1001\n}],\n\"College details\":\n[{\n  \"college name\": \"John\",\n  \"date_of_joining\": \"20/02/1990\",\n  \"USN\": 1001\n}]\n}",
+              "showReset": true,
+              "resetButtonLabel": "Reset",
+              "key": "fefd2fcqmz",
+              "backgroundColor": "#FFC13D",
+              "rightColumn": 64,
+              "autoGenerateForm": true,
+              "widgetId": "fwh3za0gio",
+              "resetButtonStyles": {
+                "buttonColor": "#2E3D49",
+                "buttonVariant": "SECONDARY",
+                "borderRadius": "ROUNDED",
+                "boxShadow": "VARIANT4",
+                "boxShadowColor": "#F86A2B",
+                "iconName": "reset",
+                "iconAlign": "right",
+                "placement": "CENTER"
+              },
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "scrollContents": true,
+              "fixedFooter": true,
+              "submitButtonLabel": "Submit",
+              "disabledWhenInvalid": true,
+              "borderRadius": "10",
+              "boxShadowColor": "#03b365"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "widgetNames": [
+          "JSONForm1",
+          "MainContainer"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page3",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6266664b3e537f47d826768d_626696c401f360366e25e6dc"
+}
