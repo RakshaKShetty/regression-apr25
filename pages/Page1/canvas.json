@@ -24,11 +24,91 @@
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "children": []
+          "children": [
+            {
+              "isCompact": false,
+              "widgetName": "MenuButton1",
+              "displayName": "Menu Button",
+              "iconSVG": "/static/media/icon.0341d17d.svg",
+              "topRow": 20,
+              "bottomRow": 24,
+              "parentRowSpace": 10,
+              "type": "MENU_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 14.328125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "menuItems.menuItem8stpm350s7.onClick"
+                }
+              ],
+              "leftColumn": 13,
+              "dynamicBindingPathList": [],
+              "isDisabled": false,
+              "key": "3c6gqyk3yd",
+              "rightColumn": 29,
+              "menuVariant": "PRIMARY",
+              "widgetId": "onbtbyie7t",
+              "menuItems": {
+                "menuItem1": {
+                  "label": "First Menu Item",
+                  "id": "menuItem1",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0
+                },
+                "menuItem2": {
+                  "label": "Second Menu Item",
+                  "id": "menuItem2",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1
+                },
+                "menuItem3": {
+                  "label": "Third Menu Item",
+                  "id": "menuItem3",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 2
+                },
+                "menuItemjstunovh51": {
+                  "id": "menuItemjstunovh51",
+                  "index": 3,
+                  "label": "Menu Item 1",
+                  "widgetId": "p1houugkwy",
+                  "isDisabled": false,
+                  "isVisible": true
+                },
+                "menuItem8stpm350s7": {
+                  "id": "menuItem8stpm350s7",
+                  "index": 4,
+                  "label": "Menu Item 2",
+                  "widgetId": "t1iiygthzb",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{showAlert('t')}}",
+                  "backgroundColor": "#231F20",
+                  "textColor": "#DD4B34"
+                }
+              },
+              "isVisible": true,
+              "label": "Open Menu",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "menuColor": "#03B365",
+              "placement": "CENTER"
+            }
+          ]
         },
         "layoutOnLoadActions": [],
         "widgetNames": [
-          "MainContainer"
+          "MainContainer",
+          "MenuButton1"
         ],
         "validOnPageLoadActions": true,
         "id": "Page1",
