@@ -42,8 +42,8 @@
                       "originalIdentifier": "name",
                       "iconAlign": "left",
                       "isDisabled": false,
-                      "isRequired": false,
-                      "isSpellCheck": false,
+                      "isRequired": true,
+                      "isSpellCheck": true,
                       "isVisible": true,
                       "label": "Name"
                     },
@@ -91,7 +91,25 @@
                     "customField1": {
                       "children": {
                         "customField1": {
-                          "children": {},
+                          "children": {
+                            "customField1": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField1",
+                              "identifier": "customField1",
+                              "position": 0,
+                              "originalIdentifier": "customField1",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Custom Field 1"
+                            }
+                          },
                           "dataType": "object",
                           "defaultValue": {},
                           "fieldType": "Object",
