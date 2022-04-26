@@ -281,7 +281,7 @@
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.5b428de1.svg",
               "topRow": 1,
-              "bottomRow": 51,
+              "bottomRow": 53,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Form",
@@ -314,7 +314,7 @@
               "resetButtonLabel": "Reset",
               "key": "vzw8c11ouo",
               "backgroundColor": "#fff",
-              "rightColumn": 46,
+              "rightColumn": 59,
               "autoGenerateForm": true,
               "widgetId": "nd5rujxv8e",
               "resetButtonStyles": {
