@@ -10,20 +10,7 @@
     "variables": [
       {
         "name": "roles",
-        "value": [
-          {
-            "label": "Admin",
-            "value": "ADMIN"
-          },
-          {
-            "label": "Developer",
-            "value": "DEV"
-          },
-          {
-            "label": "Viewer",
-            "value": "VIEWER"
-          }
-        ]
+        "value": "[{\n  label: 'Admin',\n  value: 'ADMIN'\n}, {\n  label: 'Developer',\n  value: 'DEV'\n}, {\n  label: 'Viewer',\n  value: 'VIEWER'\n}]"
       }
     ]
   },

@@ -542,13 +542,6 @@
           ]
         },
         "layoutOnLoadActions": [],
-        "widgetNames": [
-          "Divider1",
-          "MainContainer",
-          "Table1",
-          "Table2",
-          "Table3"
-        ],
         "validOnPageLoadActions": true,
         "id": "Page1",
         "deleted": false,
@@ -560,6 +553,5 @@
     "policies": []
   },
   "deleted": false,
-  "policies": [],
   "gitSyncId": "6266466f3e537f47d82672b5_6266466f3e537f47d82672b7"
 }
